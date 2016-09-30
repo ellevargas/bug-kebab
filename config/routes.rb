@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+
+  root to: 'beetle#index'
   get 'beetle/index'
 
-  get 'beetle/new'
+  get 'beetle/new' => 'beetle#new', as: 'new'
+
+  post 'beetle/new'
 
   get 'beetle/create'
 
@@ -12,22 +16,6 @@ Rails.application.routes.draw do
   get 'beetle/edit'
 
   get 'beetle/update'
-
-  get 'beattle/index'
-
-  get 'beattle/new'
-
-  get 'beattle/show'
-
-  get 'beattle/new'
-
-  get 'beattle/create'
-
-  get 'beattle/destroy'
-
-  get 'beattle/edit'
-
-  get 'beattle/update'
 
   get 'cricket/index'
 
